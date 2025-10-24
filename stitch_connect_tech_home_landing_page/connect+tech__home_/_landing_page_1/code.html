@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CONNECT+TECH</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00FF00",
+                        "secondary": "#00FFFF",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#000000",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0rem",
+                        "lg": "0rem",
+                        "xl": "0rem",
+                        "full": "0rem"
+                    },
+                    borderWidth: {
+                        "DEFAULT": "1px",
+                    },
+                    borderColor: {
+                        "DEFAULT": "#00FF00"
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .pixelated-font {
+            font-family: 'Space Grotesk', monospace;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-primary font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-20 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-6xl flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/50 px-4 py-3 fixed top-0 left-0 right-0 bg-background-dark z-50">
+<div class="flex items-center gap-4 text-secondary">
+<h2 class="text-secondary text-2xl font-bold leading-tight tracking-[-0.015em] pixelated-font">CONNECT+TECH</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-primary text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-primary text-sm font-medium leading-normal" href="#">Vagas</a>
+<a class="text-primary text-sm font-medium leading-normal" href="#">Comunidades</a>
+<a class="text-primary text-sm font-medium leading-normal" href="#">Contato</a>
+</div>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden h-10 px-4 bg-secondary text-background-dark text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Cadastrar-se</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden h-10 px-4 bg-primary/20 text-primary border border-primary text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Login</span>
+</button>
+</div>
+</div>
+<div class="md:hidden">
+<button class="text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="mt-20">
+<div class="flex flex-col gap-10 px-4 py-10 @container">
+<div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row items-center">
+<div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center text-center @[864px]:text-left">
+<div class="flex flex-col gap-2">
+<h1 class="text-primary text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] pixelated-font">
+                                            Conecte-se com talentos da tecnologia.
+                                        </h1>
+<h2 class="text-primary text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                            A sua porta de entrada para as melhores oportunidades no mundo da tecnologia.
+                                        </h2>
+</div>
+<div class="flex justify-center @[864px]:justify-start">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden h-12 px-5 bg-primary text-background-dark text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Explorar vagas</span>
+</button>
+</div>
+</div>
+<div class="w-full @[864px]:w-1/2">
+<img class="w-full h-auto object-cover" data-alt="Cyberpunk themed illustration with neon lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIrEE9-RGfUpKMGDD9QeoNSyl8V9I0tlduya5cd5cY_sqXglROY8VmzvLgLHQ3ghW5X-8bOcQ5QupVMCabnLpCpH06tIGuhuBs8N2Jg2UW2Uys4hT5mIDqWClyNN4n4A3EXw0-s1Or1VyQtBxs2_F7NDBlp1YrhAUqkbxXIFxmE73-N4cwOOG-ZuMQs8AEDV5Zx4TZMkYMMooBKJauAXHy0OKlqIBUAlU6GX1X7sdI_azm6yu6rs2JKufektNtkAVHO_S-lpOwzcIM"/>
+</div>
+</div>
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch h-full">
+<div class="text-primary flex border border-primary bg-primary/10 items-center justify-center pl-4 border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-primary focus:outline-0 focus:ring-0 border border-primary bg-primary/10 h-full placeholder:text-primary/70 px-4 border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Busque por vaga + localização" value=""/>
+</div>
+</label>
+</div>
+<div class="flex flex-col gap-4">
+<h1 class="text-primary tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px] pixelated-font">
+                                    Como funciona
+                                </h1>
+<p class="text-primary text-base font-normal leading-normal max-w-[720px]">
+                                    Nossa plataforma simplifica a conexão entre talentos e empresas com um processo intuitivo e eficiente.
+                                </p>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+<div class="flex flex-1 gap-3 border border-primary bg-primary/10 p-4 flex-col">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">person_add</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-primary text-base font-bold leading-tight">Crie seu perfil</h2>
+<p class="text-primary/80 text-sm font-normal leading-normal">Destaque suas habilidades e experiências para que as melhores empresas te encontrem.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 border border-primary bg-primary/10 p-4 flex-col">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">work</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-primary text-base font-bold leading-tight">Encontre sua vaga</h2>
+<p class="text-primary/80 text-sm font-normal leading-normal">Utilize nossa busca avançada e recomendações de IA para achar a oportunidade perfeita.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 border border-primary bg-primary/10 p-4 flex-col">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">hub</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-primary text-base font-bold leading-tight">Conecte-se</h2>
+<p class="text-primary/80 text-sm font-normal leading-normal">Interaja com recrutadores e outras mentes brilhantes da sua área.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h1 class="text-primary tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px] pixelated-font">
+                                    Benefícios
+                                </h1>
+<p class="text-primary text-base font-normal leading-normal max-w-[720px]">Descubra as vantagens de fazer parte da nossa comunidade de tecnologia.</p>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-3">
+<div class="flex flex-col gap-3 pb-3 border border-primary p-4 bg-primary/10">
+<img class="w-full h-48 object-cover" data-alt="AI brain illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8WwdovEsZA9GRaPwdG2p7SY_hliOBSb3Qm75ElgRFoYfoW6T4ZAOy8xR8OcCFsT31kM4GoRPxhprMnDe1IRTMxI-ncY2qq49RkeSqRtbjZPgLIxelTcBL2qFxpExplgLrOY6cY0D2-64SXz-u8VdLo58xkxI6sxpnOOoI5MvDu6PRETpdUdckczFjjxeJbFDPIoSgu8Tf3i00y1ll1hv_isWPQ4FygDw_95BY1E_EyYEQnmjqhavkZiLNnh1a-hZRmOLU0cFennG8"/>
+<div>
+<p class="text-primary text-base font-medium leading-normal">Recomendações com IA</p>
+<p class="text-primary/80 text-sm font-normal leading-normal">Nossa IA analisa seu perfil e sugere as vagas mais compatíveis com suas ambições.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 border border-primary p-4 bg-primary/10">
+<img class="w-full h-48 object-cover" data-alt="Automated process with gears" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsdPTsRDBMEDnmYs7GHCAQiG6ToBq4OisIkZPQFVfk0Bu_kpPLcfVivUj97PEDoipBrgvOaWYrq_SXwRDfIcwE8V4QlG6jH-V4iNIIUGymqeglf1IoW147kNirvlp6BpXrVSX6wmUlpgZW4zleMBd5xd8N-q4tzshLgRy-K5TNYRp9YoMa2hld2pZqQgaEYwp-zcVGVvDy6qc-5hW74i3G22nbahA4Mxhv2lbVHRvV04s67WQGaf93QwDQX_ALKctQK7x1kAIMi7OY"/>
+<div>
+<p class="text-primary text-base font-medium leading-normal">Automações Inteligentes</p>
+<p class="text-primary/80 text-sm font-normal leading-normal">Economize tempo com processos automatizados de candidatura e agendamento.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 border border-primary p-4 bg-primary/10">
+<img class="w-full h-48 object-cover" data-alt="Personalized content on a screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbmvrwI8ga66D97H0ArMDbIjIq8CeFEEyHzZMBeuSCpHMVlrbig8qkLVym4wnLMmiNDKs5W6BRLWXCZ3hOL1zumndlEIFqtIq4cbkpBsHdUBsgXbQ-E9fWQq1vEntMhD1LZh61ouC5wbqS2g053GvYg2HrRM5mLALAtOs_Ai-kkkXEOAL211vAeEqZL5LYJcJqSQ_Y4sQ3Qx_I3iQUNnmsZuwaIy4GBVIHYQyDgotC14v4L_h9fjOzeLzJ0zUY3GFAqRpah13qaGrj"/>
+<div>
+<p class="text-primary text-base font-medium leading-normal">Conteúdo Personalizado</p>
+<p class="text-primary/80 text-sm font-normal leading-normal">Receba artigos, notícias e cursos selecionados para o seu desenvolvimento profissional.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-10 px-4 py-10">
+<div class="flex flex-col gap-4 text-center">
+<h1 class="text-primary tracking-light text-[32px] font-bold leading-tight sm:text-4xl sm:font-black sm:leading-tight sm:tracking-[-0.033em] pixelated-font">Depoimentos</h1>
+<p class="text-primary text-base font-normal leading-normal max-w-2xl mx-auto">Veja o que os profissionais estão dizendo sobre a CONNECT+TECH.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="border border-primary p-6 flex flex-col gap-4 bg-primary/10">
+<p class="text-primary/80">"A plataforma revolucionou minha busca por emprego. A IA me conectou com a oportunidade perfeita em questão de dias!"</p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="User testimonial photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRIXsrf5ROb4o8BBaCEs9xq2iQIK4AUUUtigO8TL-SW_dSdCGKPP0ugczHImwG1b2QG0IUtY_5ZqOAO3Mor4PKQ0IUshS1LwZdH8IjwEhqKHSTZQz1b-VmYjTLlXrAMnaDgX4-ANEabfPelNhKWI2KlUun8SsXxXe9T0U87L1lP1ZzJnsX8auV2lDENtj_FsNTAMSJR1qUlacGyU4inC7xyUS_JIRAYm1O1TmJNxY11iLFUFrEW6b8sPounWXnjIZWSYeknl-N3N19"/>
+<div>
+<p class="font-bold text-primary">João S.</p>
+<p class="text-sm text-primary/70">Desenvolvedor Full-Stack</p>
+</div>
+</div>
+</div>
+<div class="border border-primary p-6 flex flex-col gap-4 bg-primary/10">
+<p class="text-primary/80">"Nunca vi uma ferramenta de networking tão eficaz para a área de tecnologia. Consegui expandir minha rede e encontrar mentores."</p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="User testimonial photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcQ4bROfx5vxkVCnNwY8FKcneN_AMuHxucHGzQfczuEARyy7K0lp4OX9OCnn51teo3C4o6WdpstnUiI5vDC6i5AQTQxiw5czDxofjfuVKoUxhEU3kn6AAhCrQY5Lba0se91tLM5MZ9t_FnU6TdWxHi6_GTbMiHcEBQAFbsWm2OE9p_YiOniYWGI4P6sQWy94TG0cVawPi9C0RIsZmUtE_T8jnWz-4TXNXpuk7sQC1Te9vQN_5jd8vT2gDU0hXcMLqPDTM7nObOKb6V"/>
+<div>
+<p class="font-bold text-primary">Mariana L.</p>
+<p class="text-sm text-primary/70">UX/UI Designer</p>
+</div>
+</div>
+</div>
+<div class="border border-primary p-6 flex flex-col gap-4 bg-primary/10">
+<p class="text-primary/80">"Como recrutadora, a CONNECT+TECH otimizou nosso processo de contratação. A qualidade dos candidatos é impressionante."</p>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="User testimonial photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALjzl3AUSSfV4DKay8t2g-OdsWeB-LgELZjYf_Zvxqu5jL7hHjRcVy3f3TuMl9JdT9Rz6qgZXTE3kGlqlIHfbWSuha3qhlPBq53cFCei5rc0Kb5o7yzF5EjsjdPWs3H9Z90evjvd_tSuxA4sTzHcWAx5wxupEn8mOAT02cNF-XMnAwTrBVHuUOcyO3HwJ-xELOuVID1BoC52H7njPJgdvALYw6-ep2Td46Y0cK0feSZ6SgUXtEMtt_F38p_TyisYqW2R3Y_Bp4Xfhz"/>
+<div>
+<p class="font-bold text-primary">Carla M.</p>
+<p class="text-sm text-primary/70">Tech Recruiter</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-10 px-4 py-10">
+<div class="flex flex-col gap-4 text-center">
+<h1 class="text-primary tracking-light text-[32px] font-bold leading-tight sm:text-4xl sm:font-black sm:leading-tight sm:tracking-[-0.033em] pixelated-font">Empresas Parceiras</h1>
+<p class="text-primary text-base font-normal leading-normal max-w-2xl mx-auto">Temos a confiança das maiores inovadoras do setor de tecnologia.</p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+<img class="h-8 md:h-10" data-alt="Notion logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEc3mY4Zw6jnle9vLSe2B7ke6BKtdCNoCGMBMThq1vsYegFkTA6ovRcG4nJqdv4xvKsbv4bq-HDW0-1c-rDnclgy1T7OWqQiAGh8pdaM0_4tq9yTBgrOTuCJvWqs4cIeMwt7RjjgHepyivsEVxQLS2lbybU4_HFVogYt0VmZZt3w0h5wTKVEjpV7U9XpKA9YCGlMDKrsommLPFllP-ObZolRoEkZ2kKUBDLobSb6fEe-1treEs66kyg-wB2V9iQhYwnrhl4r0y_l2U" style="filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(100deg);"/>
+<img class="h-8 md:h-10" data-alt="Figma logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZAyZ_qVR9dKE-27ZjgaleJE9nXQnY8OpcZXAdpc7Z4KS06BzHThA9sgvTRRWFDhD3wqqRf6KlLyu3D584CfdeEr9U-cDcVMh_erpJB6uQnHEs8amWGEPhYfos2TAOpLPP9ocrr7zoDOYCOHlnj0jpXAYK02Cxbcimk289W53ZVW_hFcB15nZF8kUFObOXA9_lNBCxxIfeqlGa1oGRHalWk8vIUZ_c_96QdJr_HFRsGOyqdvY6pywHZjhxX0wq8b4HRp-CQDptjpPf" style="filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(100deg);"/>
+<img class="h-8 md:h-10" data-alt="Slack logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-lhQ_YxeSk0EhmP_f6bjS0AgX1zr_XoVqpyi7jtnqlRT1Pg0V5sK-SHLyZEFNSfHX2-Z9sLHwEE_tKwVyJbuBC5A3GAd3PiejUb8fZFX1qXn440NyJs50ES1-eRTcIfIO2BHc36YbCsWhDMO2R3203w-ninzXbT-K5tXFow-gCLnSlfEmwPqMWgbtt4ve4z8IXeTLFrw5bjTrxUR2IZE7cKrKVvM4rz6Wk2JdYU5dl_jUuPk_A2PxERHbHKfbk8brxXX5tE_L4uDu" style="filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(100deg);"/>
+<img class="h-8 md:h-10" data-alt="Microsoft logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1noE0dQ_BY4SefSUxUHCpIdHgvt13ZIm3OJXiN_YfBxFORjE2U0ixNKsvJnqITCXCZ-ALWosIzJBEqV2MWukjJ7hohzDmzUPqOjVSs5dHAZK_XmaiTH-ViQy-ln6kSBbQZAGc_jxkTVf70kqlTl0Htrs2jmkH5k71PXCfiAEtygbALiR03Jwi2UX1dRfIkLqqzlaoMZAnpPXekT18iDCaxNVCut6NgKPB951S3p4YVd_eHT-UwiBoRo7SdKfnDLtWK1wmPb3aneYM" style="filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(100deg);"/>
+<img class="h-8 md:h-10" data-alt="Google logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9bh9iKx0B3jfxdpKjo0JbXe6318Z3HtlfkVZ8ABE9fsTt5im3Up3FMkVUjEbQx9_EF2dGOMSB2qJXc4I1PvRW_G1nZO51bKUSa9UONa5f12khKft9o-BpSzb-BLlEbLaKCbkReLuTnjT7TZrGs42mIJYhQe-VH1tX_k3CKjrQ_9lmH6LZpQGkxEX-BqXeoZMF4857emb5zDuBfL3EdKLrqxKHWN8ZCM6pBY3io6W8aHDpATqYjU_Eg3O5cJV3OaK0Fe2ntOHYqXUB" style="filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(100deg);"/>
+</div>
+</div>
+</div>
+</main>
+<footer class="border-t border-primary/50 py-10 mt-10">
+<div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<h2 class="text-secondary text-2xl font-bold mb-4 pixelated-font">CONNECT+TECH</h2>
+<p class="text-primary/80">Conectando os melhores talentos com as empresas mais inovadoras do setor de tecnologia.</p>
+</div>
+<div>
+<h3 class="font-bold text-primary mb-4">Links Rápidos</h3>
+<ul class="space-y-2">
+<li><a class="text-primary/80 hover:text-primary" href="#">Sobre Nós</a></li>
+<li><a class="text-primary/80 hover:text-primary" href="#">Contato</a></li>
+<li><a class="text-primary/80 hover:text-primary" href="#">Termos de Serviço</a></li>
+<li><a class="text-primary/80 hover:text-primary" href="#">Política de Privacidade</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-primary mb-4">Siga-nos</h3>
+<div class="flex space-x-4">
+<a class="text-primary/80 hover:text-primary" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-primary/80 hover:text-primary" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+<a class="text-primary/80 hover:text-primary" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.014c0 4.417 2.865 8.169 6.838 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.854 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.014C22 6.477 17.523 2 12 2z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="text-center text-primary/60 mt-8 pt-8 border-t border-primary/20">
+                            © 2024 CONNECT+TECH. Todos os direitos reservados.
+                        </div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>
