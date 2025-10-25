@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TechConnect - Oportunidades</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=VT323&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#00cc00', // Brighter green for highlights
+              'primary-dark': '#008000',
+              'accent-pink': '#ff00ff',
+              'accent-blue': '#00ffff',
+              background: '#0a0a0a',
+              'background-alt': '#1a1a1a',
+              'border-color': '#333333',
+              'text-primary': '#ffffff',
+              'text-secondary': '#a0a0a0',
+              'primary-less-bright': '#009900', // Less bright green
+            },
+            fontFamily: {
+              display: ['VT323', 'monospace'],
+            },
+            borderRadius: {
+              DEFAULT: '0px',
+              lg: '0px',
+              xl: '0px',
+              full: '0px',
+            },
+            boxShadow: {
+              'glow-primary': '0 0 5px #009900, 0 0 10px #009900, 0 0 15px #009900',
+              'glow-pink': '0 0 5px #ff00ff, 0 0 10px #ff00ff',
+              'glow-blue': '0 0 5px #00ffff, 0 0 10px #00ffff',
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glitch {
+        position: relative;
+        color: white;
+        text-shadow:
+          0.05em 0 0 rgba(255, 0, 0, 0.75),
+          -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+          0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+      .glitch:before,
+      .glitch:after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0a0a0a;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+      }
+      .glitch:before {
+        left: -2px;
+        text-shadow: 1px 0 #ff00ff;
+        animation: glitch-anim-1 2s infinite linear alternate-reverse;
+      }
+      .glitch:after {
+        left: 2px;
+        text-shadow: -1px 0 #00ffff;
+        animation: glitch-anim-2 2s infinite linear alternate-reverse;
+      }
+      @keyframes glitch-anim-1 {
+        0% {
+          clip: rect(42px, 9999px, 44px, 0);
+        }
+        25% {
+          clip: rect(12px, 9999px, 56px, 0);
+        }
+        50% {
+          clip: rect(85px, 9999px, 92px, 0);
+        }
+        75% {
+          clip: rect(32px, 9999px, 110px, 0);
+        }
+        100% {
+          clip: rect(63px, 9999px, 88px, 0);
+        }
+      }
+      @keyframes glitch-anim-2 {
+        0% {
+          clip: rect(69px, 9999px, 95px, 0);
+        }
+        25% {
+          clip: rect(29px, 9999px, 73px, 0);
+        }
+        50% {
+          clip: rect(81px, 9999px, 54px, 0);
+        }
+        75% {
+          clip: rect(25px, 9999px, 63px, 0);
+        }
+        100% {
+          clip: rect(7px, 9999px, 82px, 0);
+        }
+      }
+    </style>
+</head>
+<body class="bg-background font-display text-text-primary">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b-2 border-solid border-primary-less-bright px-4 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-primary-less-bright">
+<svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM11 16H8V14H11V16ZM11 12H8V10H11V12ZM11 8H8V6H11V8ZM16 16H13V14H16V16ZM16 12H13V10H16V12ZM16 8H13V6H16V8Z" fill="currentColor"></path>
+<path d="M12,4.5c-4.14,0-7.5,3.36-7.5,7.5c0,4.14,3.36,7.5,7.5,7.5c4.14,0,7.5-3.36,7.5-7.5 C19.5,7.86,16.14,4.5,12,4.5z M12,18c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S15.31,18,12,18z" fill="currentColor" fill-opacity="0.3"></path>
+</svg>
+<h2 class="text-primary-less-bright text-2xl font-bold">TechConnect</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6 text-lg">
+<a class="text-primary-less-bright font-medium" href="#">Oportunidades</a>
+<a class="text-text-primary hover:text-primary-less-bright transition-colors" href="/stitch_connect_tech_home_landing_page/connect+tech__perfil_do_usuário/code.html">Perfil</a>
+<a class="text-text-primary hover:text-primary-less-bright transition-colors" href="#">Histórico</a>
+<a class="text-text-primary hover:text-primary-less-bright transition-colors" href="#">Ferramentas de IA</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden h-10 px-4 bg-primary-less-bright text-background text-lg font-bold border-2 border-primary-less-bright hover:bg-background hover:text-primary-less-bright transition-colors">
+<span class="truncate">Publicar Vaga</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover size-10 border-2 border-accent-blue" data-alt="Foto de perfil do usuário" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXSMep_-6xfUOonHq7xgknIJWTsRhiIF8hrckWaMz3wP3Wc7RekEP5MPTLPwNKMM1kXmD0hHLFmcbFb-AmJ1t6IfLyDry31IWtSy-ig2_OwWkaoEoq4Q7Gry97iQfGWuDQR78kafBC_x3Ib3Q93xIXnvSRQDgzTJhC1564OfoXUU8Xf3vEPG6gTGl0R05m_PCgxdhdAqjZW5BFyseQlyjTxVFS8izSt2CBPv4V0fQ30J99JW-qpF3cK2ezk0lUhX2lK4dnoYs_lyWL");'></div>
+</div>
+</header>
+<main class="flex-1">
+<div class="flex flex-wrap justify-between gap-3 p-4 pt-12">
+<h1 class="text-5xl font-black tracking-tighter glitch" data-text="Encontre Sua Próxima Missão">Encontre Sua Próxima Missão</h1>
+</div>
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch h-full">
+<div class="text-primary-less-bright flex border-2 border-r-0 border-primary-less-bright bg-background-alt items-center justify-center pl-4">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-text-primary focus:outline-none focus:ring-0 border-2 border-primary-less-bright bg-background-alt h-full placeholder:text-text-secondary px-4 pl-2 text-lg font-normal" placeholder="Pesquisar cargo, ex: 'Engenheiro de Software'" value=""/>
+</div>
+</label>
+</div>
+<div class="flex gap-3 p-4 flex-wrap text-lg">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 bg-background-alt border border-border-color hover:border-accent-pink px-4">
+<p class="text-text-primary">Área</p>
+<span class="material-symbols-outlined text-text-primary text-base">expand_more</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 bg-background-alt border border-border-color hover:border-accent-pink px-4">
+<p class="text-text-primary">Cargo</p>
+<span class="material-symbols-outlined text-text-primary text-base">expand_more</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 bg-background-alt border border-border-color hover:border-accent-pink px-4">
+<p class="text-text-primary">Tipo</p>
+<span class="material-symbols-outlined text-text-primary text-base">expand_more</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 bg-background-alt border border-border-color hover:border-accent-pink px-4">
+<p class="text-text-primary">Salário</p>
+<span class="material-symbols-outlined text-text-primary text-base">expand_more</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 bg-background-alt border border-border-color hover:border-accent-pink px-4">
+<p class="text-text-primary">Remoto</p>
+<span class="material-symbols-outlined text-text-primary text-base">expand_more</span>
+</button>
+</div>
+<h2 class="text-3xl font-bold tracking-tight px-4 pb-3 pt-8 text-accent-blue">Recomendado para você</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
+<div class="bg-background-alt p-6 border border-border-color hover:border-primary-less-bright transition-colors duration-300 relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary-less-bright shadow-glow-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-2xl font-bold text-text-primary">Engenheiro de Frontend Sênior</h3>
+<p class="text-text-secondary">Indústrias Stark</p>
+<p class="text-text-secondary text-base mt-1">Nova York, NY (Remoto)</p>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover size-12 border border-border-color" data-alt="Logo da empresa Stark Industries" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCc6Pj32860OZfy6S3iX7hmrVCaUpId-etsWrlpUHojE93f_eM49DJCWmq4H5jUNjRXggLvW3-cBB3R_MDg_wWcLDWCreHuWKA5_7x7ORsu6I9vstd1ugYgtFrZ4Wrp5MuWEa4ze06v_2zyQtEnCvHEGdnRZySvgOqSkCsDfrh7JqFzT5NEzwiQIKE36ZGPXVcPXfB_7kwudXJDxlJnkG3197-FXrODC49LI9LfeGRz7jXCvs8sigOQF-SG-YNrqesN94fNZ5ZUa61F");'></div>
+</div>
+<div class="mt-4">
+<div class="flex items-center gap-2">
+<p class="text-base text-primary-less-bright font-semibold">Compatibilidade com IA:</p>
+<div class="w-full bg-border-color h-2.5">
+<div class="bg-primary-less-bright h-2.5 shadow-glow-primary" style="width: 92%"></div>
+</div>
+<p class="text-base font-bold text-primary-less-bright">92%</p>
+</div>
+</div>
+<div class="mt-4 flex gap-2 text-sm">
+<span class="bg-primary-dark text-primary-less-bright px-2.5 py-0.5 border border-primary-less-bright">React</span>
+<span class="bg-primary-dark text-primary-less-bright px-2.5 py-0.5 border border-primary-less-bright">TypeScript</span>
+<span class="bg-primary-dark text-primary-less-bright px-2.5 py-0.5 border border-primary-less-bright">GraphQL</span>
+</div>
+<button class="mt-6 w-full text-center bg-primary-less-bright text-background font-bold py-2 px-4 text-lg border-2 border-primary-less-bright hover:bg-background hover:text-primary-less-bright transition-colors">Ver Detalhes</button>
+</div>
+<div class="bg-background-alt p-6 border border-border-color hover:border-primary-less-bright transition-colors duration-300 relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary-less-bright shadow-glow-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-2xl font-bold text-text-primary">Líder de Desenvolvimento Backend</h3>
+<p class="text-text-secondary">Empresas Wayne</p>
+<p class="text-text-secondary text-base mt-1">Gotham City, NJ</p>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover size-12 border border-border-color" data-alt="Logo da empresa Wayne Enterprises" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXV7im6lo0jbD4nG1fap10Z7x3qZuDyiudPnSc4n8cDvYgVAi-SBJF35Vr-f-sEW1kxEBqE4Hp0KcudLEo_NpSjGdhuEwkoHmF0kZ1_0kJv54jmnuZTCDqIIN4iUusAEMjdTLQ6JYUkDnhdfi6YBITwf5ePhzf9KV0RGms4FlSvWyypES3vZWwSG1si-qjQ0NTqiVfpA1CtILf0DkJBiQ7UcId-cwLnt5N1zEhZLkj_TboQHlz2jYqHBKzzlpNr2cmoJ0dM0OXmwJG");'></div>
+</div>
+<div class="mt-4">
+<div class="flex items-center gap-2">
+<p class="text-base text-primary-less-bright font-semibold">Compatibilidade com IA:</p>
+<div class="w-full bg-border-color h-2.5">
+<div class="bg-primary-less-bright h-2.5 shadow-glow-primary" style="width: 85%"></div>
+</div>
+<p class="text-base font-bold text-primary-less-bright">85%</p>
+</div>
+</div>
+<div class="mt-4 flex gap-2 text-sm">
+<span class="bg-primary-dark text-primary-less-bright px-2.5 py-0.5 border border-primary-less-bright">Python</span>
+<span class="bg-primary-dark text-primary-less-bright px-2.5 py-0.5 border border-primary-less-bright">Django</span>
+<span class="bg-primary-dark text-primary-less-bright px-2.5 py-0.5 border border-primary-less-bright">PostgreSQL</span>
+</div>
+<button class="mt-6 w-full text-center bg-primary-less-bright text-background font-bold py-2 px-4 text-lg border-2 border-primary-less-bright hover:bg-background hover:text-primary-less-bright transition-colors">Ver Detalhes</button>
+</div>
+<div class="bg-background-alt p-6 border border-border-color hover:border-primary-less-bright transition-colors duration-300 relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary-less-bright shadow-glow-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-2xl font-bold text-text-primary">Especialista em DevOps</h3>
+<p class="text-text-secondary">Sistemas Cyberdyne</p>
+<p class="text-text-secondary text-base mt-1">Sunnyvale, CA (Híbrido)</p>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover size-12 border border-border-color" data-alt="Logo da empresa Cyberdyne Systems" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBtxxGXwDKXM4Y4bjJREuoSpQBgTXwDPljwViuOgsbdT-_1EIpiG1tM14Rzp15wE3TiXmlMZgB3T111iBLTx-JVlULlXyYZbusJicGga_KVA5b5CIeII3fg3jum-nvI6JbYUGCeVZgg91RLqDYAW8dws2HZnr0qDlaVL6n2iY0ZlgZ4ixRJLTOzi8E0eYqiehPwTU4uZBPItklfueOTDdF9Hd3fRiL826iRzwcrWUSYJD7gMdEzXH5RzjQXCPAQ0iHKP9_5k-5QZ2JP");'></div>
+</div>
+<div class="mt-4">
+<div class="flex items-center gap-2">
+<p class="text-base text-primary-less-bright font-semibold">Compatibilidade com IA:</p>
+<div class="w-full bg-border-color h-2.5">
+<div class="bg-primary-less-bright h-2.5 shadow-glow-primary" style="width: 78%"></div>
+</div>
+<p class="text-base font-bold text-primary-less-bright">78%</p>
+</div>
+</div>
+<div class="mt-4 flex gap-2 text-sm">
+<span class="bg-primary-dark text-primary-less-bright px-2.5 py-0.5 border border-primary-less-bright">AWS</span>
+<span class="bg-primary-dark text-primary-less-bright px-2.5 py-0.5 border border-primary-less-bright">Kubernetes</span>
+<span class="bg-primary-dark text-primary-less-bright px-2.5 py-0.5 border border-primary-less-bright">Terraform</span>
+</div>
+<button class="mt-6 w-full text-center bg-primary-less-bright text-background font-bold py-2 px-4 text-lg border-2 border-primary-less-bright hover:bg-background hover:text-primary-less-bright transition-colors">Ver Detalhes</button>
+</div>
+<div class="bg-background-alt p-6 border border-border-color hover:border-primary-less-bright transition-colors duration-300 relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary-less-bright shadow-glow-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-2xl font-bold text-text-primary">Gerente de Produto - IA</h3>
+<p class="text-text-secondary">Omni Consumer Products</p>
+<p class="text-text-secondary text-base mt-1">Detroit, MI</p>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover size-12 border border-border-color" data-alt="Logo da empresa Omni Consumer Products" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDE8Pr382yiWIHdgtUoU13Axcj5ZqMg3WrDXxGoH1aKLXRYucPByDhsX9pdb8pyCdt2r1nYFfe3mlI31ilns1JxlLHzozgHuDNsn95UgWhN6SWWLkZvSU8Fl612kU7Xx6Oopv3S8ZYyH3UbF6fBz6rczXF0eWVzdmpkSsPmit9CtZu9p421RD6ipcOqismV-b0o0BgJaXuYB1xE2cbB4CNIiYwvW9XbR-KAk2fFdUKN82xoOajnc2LSTCoUyhUkzYn91ZwJRGG_S_uA");'></div>
+</div>
+<div class="mt-4">
+<div class="flex items-center gap-2">
+<p class="text-base text-primary-less-bright font-semibold">Compatibilidade com IA:</p>
+<div class="w-full bg-border-color h-2.5">
+<div class="bg-primary-less-bright h-2.5 shadow-glow-primary" style="width: 71%"></div>
+</div>
+<p class="text-base font-bold text-primary-less-bright">71%</p>
+</div>
+</div>
+<div class="mt-4 flex gap-2 text-sm">
+<span class="bg-primary-dark text-primary-less-bright px-2.5 py-0.5 border border-primary-less-bright">Estratégia de Produto</span>
+<span class="bg-primary-dark text-primary-less-bright px-2.5 py-0.5 border border-primary-less-bright">Agile</span>
+<span class="bg-primary-dark text-primary-less-bright px-2.5 py-0.5 border border-primary-less-bright">IA/ML</span>
+</div>
+<button class="mt-6 w-full text-center bg-primary-less-bright text-background font-bold py-2 px-4 text-lg border-2 border-primary-less-bright hover:bg-background hover:text-primary-less-bright transition-colors">Ver Detalhes</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>

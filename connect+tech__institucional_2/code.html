@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tech Connect - Institucional</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=VT323&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00FF00", // Bright Green
+                        "secondary": "#FF00FF", // Magenta
+                        "accent": "#00FFFF", // Cyan
+                        "background-dark": "#0A0A0A",
+                        "text-primary": "#E0E0E0",
+                        "text-secondary": "#A0A0A0",
+                    },
+                    fontFamily: {
+                        "pixel": ["'VT323'", "monospace"] 
+                    },
+                    boxShadow: {
+                        'glow-primary': '0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00',
+                        'glow-secondary': '0 0 5px #FF00FF, 0 0 10px #FF00FF',
+                    },
+                    borderRadius: {
+                        "none": "0",
+                        "sm": "0",
+                        "DEFAULT": "0",
+                        "md": "0",
+                        "lg": "0",
+                        "xl": "0",
+                        "2xl": "0",
+                        "3xl": "0",
+                        "full": "0",
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background-dark text-text-primary font-pixel;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                @apply font-pixel text-primary;
+            }
+            .glitch-effect {
+                text-shadow: 0.05em 0 0 rgba(255,0,0,0.75), -0.05em 0 0 rgba(0,255,0,0.75), 0 0.05em 0 rgba(0,0,255,0.75);
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-text-primary font-pixel">
+<div class="relative flex h-auto min-h-screen w-full flex-col" style="background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 1)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNpxzaPTfztvOz7Z7cLPv2XlVhgvSIIUVicQRrL-lbi-20sVqstA8qvrUrxAszJ2FVSOAfg9uA7qsEdhQKgRQrHgJSQnfml0S8GoKM4GgLC_sm05IaWtjJjasqlgLzgLIlDhpBRCqh8BC4Q6Nw7gA8DSrjWUhRmIU1TqrRb-FgEn4b96ISq8LPTXqQWQLOqEWuEFICf06TQ_RxF685cdRE7GIdhREWFul6WVn6QOmczii8pNpP1B1ria3YcHQUbFAZUYWmXdWthaPa');">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 bg-background-dark/70 backdrop-blur-sm border-b-2 border-primary">
+<div class="px-4 md:px-10 lg:px-20">
+<div class="flex items-center justify-between py-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-4xl animate-pulse">
+                                memory
+                            </span>
+<h2 class="text-primary text-3xl font-bold glitch-effect">Tech Connect</h2>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-text-primary text-lg hover:text-primary hover:underline" href="#sobre-nos">Sobre nós</a>
+<a class="text-text-primary text-lg hover:text-primary hover:underline" href="#contato">Contato</a>
+<a class="text-text-primary text-lg hover:text-primary hover:underline" href="#faq">FAQ</a>
+<a class="text-text-primary text-lg hover:text-primary hover:underline" href="#termos">Termos</a>
+</div>
+<div class="flex md:hidden">
+<button class="text-primary">
+<span class="material-symbols-outlined text-3xl">
+                                    menu
+                                </span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 px-4 md:px-10 lg:px-20 py-12">
+<div class="max-w-5xl mx-auto">
+<section class="min-h-[300px] flex flex-col gap-4 items-center justify-center text-center py-16" id="hero">
+<h1 class="text-primary text-5xl md:text-7xl font-bold glitch-effect">
+                            CONECTANDO TALENTOS E EMPRESAS
+                        </h1>
+<h2 class="text-text-secondary text-xl md:text-2xl font-normal max-w-3xl">
+                            A plataforma definitiva para profissionais de tecnologia impulsionada por Inteligência Artificial.
+                        </h2>
+</section>
+<div class="grid grid-cols-1 gap-12">
+<section id="sobre-nos">
+<h2 class="text-4xl font-bold mb-4 border-b-2 border-primary pb-2">Sobre nós</h2>
+<p class="text-text-secondary text-lg leading-relaxed">
+                            Nossa missão é revolucionar o mercado de trabalho em tecnologia, utilizando inteligência artificial para criar conexões mais eficientes e significativas entre profissionais e empresas. Acreditamos que a tecnologia pode e deve ser uma força para o bem, impulsionando carreiras e o crescimento de negócios inovadores. A Tech Connect nasceu da vontade de simplificar o processo de recrutamento, tornando-o mais justo, transparente e inteligente.
+                        </p>
+</section>
+<section id="contato">
+<h2 class="text-4xl font-bold mb-4 border-b-2 border-primary pb-2">Contato / Suporte</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div>
+<form class="space-y-4">
+<div>
+<label class="block text-lg text-text-primary" for="name">Nome</label>
+<input class="mt-1 block w-full bg-black border-2 border-primary/50 focus:border-primary focus:ring-0 text-text-primary p-2" id="name" name="name" type="text"/>
+</div>
+<div>
+<label class="block text-lg text-text-primary" for="email">Email</label>
+<input class="mt-1 block w-full bg-black border-2 border-primary/50 focus:border-primary focus:ring-0 text-text-primary p-2" id="email" name="email" type="email"/>
+</div>
+<div>
+<label class="block text-lg text-text-primary" for="message">Mensagem</label>
+<textarea class="mt-1 block w-full bg-black border-2 border-primary/50 focus:border-primary focus:ring-0 text-text-primary p-2" id="message" name="message" rows="4"></textarea>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center border-2 border-primary bg-primary/20 p-3 text-lg font-bold text-primary hover:bg-primary hover:text-black transition-colors" type="submit">
+                                    Enviar Mensagem
+                                </button>
+</form>
+</div>
+<div class="text-text-secondary text-lg space-y-4 pt-2">
+<p><strong>Email:</strong> <a class="hover:text-primary hover:underline" href="mailto:suporte@techconnect.com">suporte@techconnect.com</a></p>
+<p><strong>Telefone:</strong> +55 (11) 9XXXX-XXXX</p>
+<p><strong>Redes Sociais:</strong></p>
+<div class="flex space-x-4">
+<a class="hover:text-primary" href="#">LinkedIn</a>
+<a class="hover:text-primary" href="#">Twitter</a>
+<a class="hover:text-primary" href="#">GitHub</a>
+</div>
+</div>
+</div>
+</section>
+<section id="faq">
+<h2 class="text-4xl font-bold mb-4 border-b-2 border-primary pb-2">Perguntas Frequentes</h2>
+<div class="space-y-4">
+<details class="group bg-black/50 p-4 border-2 border-primary/50">
+<summary class="flex justify-between items-center cursor-pointer font-bold text-xl text-primary list-none">
+                                    Como a IA me ajuda a encontrar vagas?
+                                    <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">
+                                        expand_more
+                                    </span>
+</summary>
+<p class="mt-2 text-text-secondary text-lg">Nossa IA analisa seu perfil, habilidades e preferências para recomendar as vagas mais compatíveis com sua carreira, otimizando seu tempo e aumentando suas chances de sucesso.</p>
+</details>
+<details class="group bg-black/50 p-4 border-2 border-primary/50">
+<summary class="flex justify-between items-center cursor-pointer font-bold text-xl text-primary list-none">
+                                    A plataforma é gratuita para candidatos?
+                                    <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">
+                                        expand_more
+                                    </span>
+</summary>
+<p class="mt-2 text-text-secondary text-lg">Sim, o cadastro e a candidatura para vagas são totalmente gratuitos para profissionais. Oferecemos planos premium com funcionalidades avançadas para quem deseja acelerar sua carreira.</p>
+</details>
+<details class="group bg-black/50 p-4 border-2 border-primary/50">
+<summary class="flex justify-between items-center cursor-pointer font-bold text-xl text-primary list-none">
+                                    Como as empresas se beneficiam da plataforma?
+                                    <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">
+                                        expand_more
+                                    </span>
+</summary>
+<p class="mt-2 text-text-secondary text-lg">Empresas utilizam nossa IA para encontrar os talentos mais qualificados de forma rápida e eficiente. Nossas ferramentas automatizam a triagem inicial e ajudam a identificar os candidatos com o melhor fit cultural e técnico.</p>
+</details>
+</div>
+</section>
+<section id="termos">
+<h2 class="text-4xl font-bold mb-4 border-b-2 border-primary pb-2">Termos e Política de Privacidade</h2>
+<div class="text-text-secondary text-lg space-y-4">
+<p>Levamos sua privacidade a sério. Nossa Política de Privacidade explica quais dados coletamos e como os utilizamos para melhorar sua experiência. Nossos Termos de Serviço descrevem seus direitos e responsabilidades ao usar a Tech Connect.</p>
+<div class="flex space-x-6">
+<a class="text-primary hover:underline text-xl" href="#">Termos de Serviço</a>
+<a class="text-primary hover:underline text-xl" href="#">Política de Privacidade</a>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<footer class="bg-background-dark border-t-2 border-primary mt-12">
+<div class="max-w-5xl mx-auto px-4 md:px-10 lg:px-20 py-6 text-center text-text-secondary text-base">
+<p>© 2024 Tech Connect. Todos os direitos reservados.</p>
+</div>
+</footer>
+</div>
+<div class="fixed bottom-6 right-6 group">
+<button class="bg-secondary p-4 border-2 border-secondary shadow-glow-secondary hover:bg-secondary/80 transition-transform transform group-hover:scale-110">
+<span class="material-symbols-outlined text-white text-4xl animate-spin" style="animation-duration: 3s;">
+                    smart_toy
+                </span>
+</button>
+<div class="absolute bottom-24 right-0 w-80 bg-black border-2 border-secondary shadow-xl p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+<p class="text-xl text-secondary glitch-effect">Chatbot AI</p>
+<p class="text-text-primary text-base mt-2">Olá! Sou seu assistente de IA. Como posso ajudar a hackear sua carreira?</p>
+<input class="mt-4 block w-full bg-black border-2 border-secondary/50 focus:border-secondary focus:ring-0 text-text-primary p-2" placeholder="Digite sua pergunta..." type="text"/>
+</div>
+</div>
+</div>
+
+</body></html>

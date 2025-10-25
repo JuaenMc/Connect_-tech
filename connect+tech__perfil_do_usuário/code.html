@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>User Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=VT323&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00FF00",
+                        "background-dark": "#000000",
+                        secondary: "#1A1A1A",
+                        accent: "#FF00FF",
+                        "accent-blue": "#00FFFF",
+                    },
+                    fontFamily: {
+                        display: ["VT323", "monospace"],
+                    },
+                    boxShadow: {
+                        'green-glow': '0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00',
+                        'accent-glow': '0 0 5px #FF00FF, 0 0 10px #FF00FF',
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .pixelated-border {
+            border: 2px solid #00FF00;
+            box-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+            image-rendering: pixelated;
+        }
+        .pixelated-text {
+            font-family: "VT323", monospace;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        }
+        .neuron-logo {
+            filter: invert(1) brightness(1.5) drop-shadow(0 0 3px #00FF00);
+        }
+        .glitch-effect:hover {
+            animation: glitch 1s linear infinite;
+        }
+        @keyframes glitch {
+            2%,
+            64% {
+                transform: translate(2px, 0) skew(0deg);
+            }
+            4%,
+            60% {
+                transform: translate(-2px, 0) skew(0deg);
+            }
+            62% {
+                transform: translate(0, 0) skew(5deg);
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-dark group/design-root overflow-x-hidden">
+<header class="absolute top-0 left-0 w-full p-4 flex justify-between items-center z-10">
+<div class="flex items-center gap-2">
+<img alt="Neuron in a chip logo" class="w-10 h-10 neuron-logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD3Twvgn5QeZM7856r1T1IQ643YjtSXQEmgMWsXslOHDg5wybxrW462HxGFxm3PQRSMhySLmfuQ-foYz0uqIEp6jNXtqUL1_IYRdyatA6c_MJbN-6cE3a_3_wKY6rajoLVHpQul1HjJard80vKYRJp9lHLAgZrbyGmLZFaSNSOkikpcr-CGJk8RF6CtE5BoKbvBTaGSfIuDHAtSb3XCbY0624uRiVILcU_2T3_udR2hVpMxBCevfiJe2zRRzAdujNRSEBQMvRXy9_S"/>
+<span class="text-primary text-2xl pixelated-text">NeuroLink</span>
+</div>
+</header>
+<div class="layout-container flex h-full grow flex-col">
+<div class="relative">
+<div class="h-64 w-full bg-cover bg-center" data-alt="A pixelated cityscape cover image." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHD9iM4byXyLmDLtyVuHJNLAaXlrm9R4H6PAn6WAXQoBd2EWxhr9TBhQ3oIgNgxk5uj4IqI-aiT7JAgj3T-f8kk-20YY5MG4gWnPLejdWjPlxP1jvpy0fyOpUrIfgmOC6iDmAhoxLCcwmAgNuUMzo9_X9zt1hfW5MUpHAZKieQt5H3jriBDZeyp9gO38lXIZb9fd3xpFe-5EGYUctP_DOOWuK0WkAlW-vVUb8x8faGwpBVWiraC6qrUwNML6d21X_9xyKQ7TxuXjxZ')"></div>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32 pixelated-border" data-alt="A pixelated profile picture of a person with a C initial." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDENgSy-EZZ84GfqrqJrSmcVXLWsm9VLoPUG3E1KchQ21eegyJPPnCPKUIczUskAWcZBvTx3mbfWG_QhsyN7gcSdrh9tjDMHgvEFHXCIN0Fo_W1X_z3TW9KckxML_ijCawQPLIc4yAoPlt66otWmWATa9rJS5AX5jwklODElvciHvaRWPWB2-7B9hNkyfDO9T8D_mGVpeCv6fD9ASojTEARM7s06pAaMdF5YqFPWfv30YsAna6G6-e87sPEmVJaJlYyQ8E9SkUGwxEd');"></div>
+</div>
+</div>
+<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex flex-col items-center pt-20 text-center">
+<p class="text-primary text-4xl font-bold leading-tight tracking-wider pixelated-text">Caique</p>
+<p class="text-accent-blue text-xl leading-normal">Software Engineer</p>
+<p class="text-white text-lg leading-normal">São Paulo, Brazil</p>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-none h-10 px-4 bg-transparent text-primary border-2 border-primary text-lg font-bold leading-normal tracking-wider mt-4 hover:bg-primary hover:text-black transition-colors shadow-green-glow glitch-effect">
+<span class="truncate">Editar Perfil</span>
+</button>
+</div>
+<div class="mt-12 border-2 border-primary p-4 shadow-green-glow">
+<h3 class="text-accent text-2xl font-bold leading-tight tracking-wider pixelated-text mb-2">Biografia</h3>
+<p class="text-white text-lg leading-relaxed">
+                            Sou um desenvolvedor de software apaixonado por criar soluções inovadoras e eficientes. Tenho experiência em diversas tecnologias e estou sempre em busca de novos desafios para aprimorar minhas habilidades.
+                        </p>
+<div class="flex mt-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-none h-10 px-4 bg-accent text-black border-2 border-accent text-lg font-bold leading-normal tracking-wider hover:bg-transparent hover:text-accent transition-colors shadow-accent-glow glitch-effect">
+<span class="truncate">Gerar com IA</span>
+</button>
+</div>
+</div>
+<div class="mt-8 border-2 border-primary p-4 shadow-green-glow">
+<h3 class="text-accent text-2xl font-bold leading-tight tracking-wider pixelated-text mb-4">Contato</h3>
+<div class="gap-4 flex flex-wrap justify-center sm:justify-start">
+<div class="flex flex-col items-center gap-2 bg-transparent text-center w-24 p-2 border-2 border-accent-blue shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/50 transition-shadow">
+<div class="p-2.5">
+<span class="material-symbols-outlined text-accent-blue text-4xl">mail</span>
+</div>
+<p class="text-white text-lg font-medium leading-normal">Email</p>
+</div>
+<div class="flex flex-col items-center gap-2 bg-transparent text-center w-24 p-2 border-2 border-accent-blue shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/50 transition-shadow">
+<div class="p-2.5">
+<svg class="text-accent-blue" fill="currentColor" height="40" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.43 12.87 11.24V10.13H10.13V18.5H12.87V13.57C12.87 12.55 13.81 11.63 14.9 11.63C16.1 11.63 16.5 12.51 16.5 13.57V18.5H18.5ZM6.88 8.56A1.68 1.68 0 1 0 6.88 5.19A1.68 1.68 0 0 0 6.88 8.56ZM8.25 18.5V10.13H5.5V18.5H8.25Z"></path>
+</svg>
+</div>
+<p class="text-white text-lg font-medium leading-normal">LinkedIn</p>
+</div>
+<div class="flex flex-col items-center gap-2 bg-transparent text-center w-24 p-2 border-2 border-accent-blue shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/50 transition-shadow">
+<div class="p-2.5">
+<span class="material-symbols-outlined text-accent-blue text-4xl">code</span>
+</div>
+<p class="text-white text-lg font-medium leading-normal">GitHub</p>
+</div>
+</div>
+</div>
+<div class="mt-8 border-2 border-primary p-4 shadow-green-glow">
+<h3 class="text-accent text-2xl font-bold leading-tight tracking-wider pixelated-text mb-4">Habilidades e Tecnologias</h3>
+<div class="flex flex-wrap gap-3">
+<span class="bg-secondary text-primary border-2 border-primary text-lg font-medium px-4 py-2">JavaScript</span>
+<span class="bg-secondary text-primary border-2 border-primary text-lg font-medium px-4 py-2">React</span>
+<span class="bg-secondary text-primary border-2 border-primary text-lg font-medium px-4 py-2">Node.js</span>
+<span class="bg-secondary text-primary border-2 border-primary text-lg font-medium px-4 py-2">Tailwind CSS</span>
+<span class="bg-secondary text-primary border-2 border-primary text-lg font-medium px-4 py-2">Next.js</span>
+<span class="bg-secondary text-primary border-2 border-primary text-lg font-medium px-4 py-2">Figma</span>
+</div>
+</div>
+<div class="mt-8 border-2 border-primary p-4 shadow-green-glow">
+<h3 class="text-accent text-2xl font-bold leading-tight tracking-wider pixelated-text mb-4">Portfólio</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="bg-secondary p-4 border-2 border-accent">
+<img class="w-full h-40 object-cover mb-4" data-alt="Pixelated thumbnail for Project Alpha." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9pamGInr7-IcKRHd-1tKcMPlq9Nz-8X7UYffZw9YMYx2kaoM4nWIok_jbSCNa16H4Sq3smtvIDHvMBX_MJI4wvXBdDYW8HqImxj7QUp420RRuWFu2crekXviWkEjZwu-RdpQfbAr-gp-SuGDImXN5X4C8syuXHmd0gID4Ug2a3qv7UHFxx_MMQRBK8LurSSv9SEdhVG-cU53o1FLqKh11f31mAte4ImVZlhWeAPrzVgB4DiopLgnQgTxpX_FEH2C6BcX6EkJM7XjJ"/>
+<h4 class="text-primary font-bold text-xl">Project Alpha</h4>
+<p class="text-white text-md mt-2">A cutting-edge web application for data visualization.</p>
+<button class="text-accent-blue text-md mt-4 hover:underline">Ajustar Descrição com IA</button>
+</div>
+<div class="bg-secondary p-4 border-2 border-accent">
+<img class="w-full h-40 object-cover mb-4" data-alt="Pixelated thumbnail for Project Beta." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGlFeBLC_kE_l_kj_WvKAltFS_hr8nGosJUI1DOKNc3RqBJ3wWKkjMvy5Ncdv2OT-mxD2fTZiz3tjdECSaX8EYcIsNi00x3UMT299qTTohOw9g6nSaJkCMroimZhtrOPNEIIpcqjUbMyczMwQOm3RNpM0GatMPv8mSmMWhSlGIAlMOuXAzu0AN_RziOXSvCLEO7H9G8636oVx3o-O6WPQ1a8BttgYi_mdFCf_bYGO7rvhZW69zLSKaiTOb-YMh2H5t_blMP8mU4OY2"/>
+<h4 class="text-primary font-bold text-xl">Project Beta</h4>
+<p class="text-white text-md mt-2">A mobile-first e-commerce platform with a unique UI.</p>
+<button class="text-accent-blue text-md mt-4 hover:underline">Ajustar Descrição com IA</button>
+</div>
+<div class="bg-secondary p-4 border-2 border-accent">
+<img class="w-full h-40 object-cover mb-4" data-alt="Pixelated thumbnail for Project Gamma." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAydbiGcYzmpCPAyAueY2nhdiv8SQp55GDq425ebpPqD5XGuFImoXauMNd0ksLiUObTcdfavXBF49TE47cGYrxGOEDOxNWK1I7AJpLx6TUrjw8rsEtAnDDvN9JXukBF5JCH4lvwY2lGLNHmgOopoMnxzIlcZundtN2RcmK2uEx733GbS89uZSkeKmBzG4Sx9Jwnz1_b7Yx93NioN5ddeuiAvgq7m9RWbhPaqgEndI39faL9DGF4afFXUUBF9kXp6uwtyRmbBJuyr7IQ"/>
+<h4 class="text-primary font-bold text-xl">Project Gamma</h4>
+<p class="text-white text-md mt-2">An open-source library for creating pixel art animations.</p>
+<button class="text-accent-blue text-md mt-4 hover:underline">Ajustar Descrição com IA</button>
+</div>
+</div>
+</div>
+<div class="mt-8 border-2 border-primary p-4 shadow-green-glow">
+<h3 class="text-accent text-2xl font-bold leading-tight tracking-wider pixelated-text mb-4">Postagens Recentes</h3>
+<div class="space-y-4">
+<div class="bg-secondary p-4 border-2 border-accent">
+<h4 class="text-primary font-bold text-xl">The Future of AI in Web Development</h4>
+<p class="text-white text-md mt-2">A deep dive into how artificial intelligence is shaping the future of web development...</p>
+<a class="text-accent-blue text-md mt-2 block hover:underline" href="#">Read more</a>
+</div>
+<div class="bg-secondary p-4 border-2 border-accent">
+<h4 class="text-primary font-bold text-xl">Mastering Cyberpunk UI Design</h4>
+<p class="text-white text-md mt-2">Tips and tricks for creating stunning cyberpunk-themed user interfaces with modern tools...</p>
+<a class="text-accent-blue text-md mt-2 block hover:underline" href="#">Read more</a>
+</div>
+</div>
+</div>
+<div class="mt-8 border-2 border-primary p-4 shadow-green-glow">
+<h3 class="text-accent text-2xl font-bold leading-tight tracking-wider pixelated-text mb-4">Conexões e Seguidores</h3>
+<div class="flex flex-wrap gap-4">
+<img class="w-16 h-16 rounded-full pixelated-border" data-alt="Pixelated profile picture of user A." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFxQCrarz131Hj0xnPSvW13z2IpIDD557VPqyszqepVRIh_1LPQmLkChXnqMNwx9yD_0ykAq6NJtUXUtCa5D5kFBf5zSFQ9tS-Zvfi4PFbn-MbF0FbFgUBZGBl3852Z7O5LHgJXOcgAMrjYQy5WKAalHfTG0xJkck5DW6bjNSkRT4ID1gfR-fOa4IP8nD_Xh31590x8NCRoLhsvKGh68WdWOSAbGYC9q-Jn_uGumW_EMsSZlNJskmGY230-gzt2ojqdz2dFi51gIhd"/>
+<img class="w-16 h-16 rounded-full pixelated-border" data-alt="Pixelated profile picture of user B." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8zP8cc7CENOIf0ySfD80fNTNN9bvc2FEQ55bEa-YgzkxXBpfTZYFUkmIopClRo5fKE8nHnStvBQ0GMd5dTRME_pPIEVgmD2808YDOamIdfpkUICTC5eSNnm_yrW3l35xjX26YI7_dYus7839VrDc77qsPsJlx7AtEw0timiCCw0nrCVTN8DvejTW0SPO3nOR-rwpuASrWSzEFWvFfCJUpcvqGredj2XYYb-T4qWo3jLDVzaYAvp9jvSah_6aL6JmZFmTf7CIQaiDT"/>
+<img class="w-16 h-16 rounded-full pixelated-border" data-alt="Pixelated profile picture of user D." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAITz2MsmQ2m_06aETXQSp96VLM7z2Dsx5JjuOmJtULYOvtOhEMQSdJJY951ydYXtTJoM_BorTJ1EkJ2dhlfr7vRe7sRuxAvyeaNIJZ-1BVDwPRy6nz1aMrmSV8U6M5lepPKgNfh0wwQIdYulFGNmVfcj-kVrJzgupYEqTB2oTeiXvoRpQ40BeVg2oDa1oErndAJzfnP5sWo3CCUJ5Usx_9oMG9QOkSgazbdyl57HX-QQW-l6H6WOJAxRjijNcSKA1EF8UTqSfsj5Ew"/>
+<img class="w-16 h-16 rounded-full pixelated-border" data-alt="Pixelated profile picture of user E." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeiMD2CDFPv370vRfS4mKc3fsdFgvVkfelyWaV59PX0Cx3_vJ8Xn1owOwIBR3_SSFXVLDBgL79I1k5l58yUi7nuUApkkjZcrY6YdGb6BcrS2Do5X4YX6RCqdzFIV71E8vFtGg6UUzhfCzvPn9u-Xi3nmPqA01V33t_sJmKDm-keSRPJD_hoNGJAmpTRsl1D4_lWnimtJgnByzCZIOKxugEyXWe9ZDjk8zHm2jHckUvpspC9Nmbv75a2-q9EMS4k-QZauunNsTy4R_c"/>
+<img class="w-16 h-16 rounded-full pixelated-border" data-alt="Pixelated profile picture of user F." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIm95gKPY1t_6VdLrWRia_1D_ELo3RWYGWSf5IpAQHA0oTDipLRVE4bNMIIJWoqgWDILg1aknoBAHu2fQ1dfjGOWscR6PjP_M-MuEsdernYWkNCIoG-t72ePSlHGjsPZt_ZHi0KxbboPdyq6pK_mjwR0KjhSLj8Ne0F3V_zbiZ_PZ2ddQ83MmsN7LIQ0pvwJx4wOPKkZ8sQ3mCjwNGbcaZmeUsokMSLXkPGreNTGrs4-c4DzpVf9l1vxhEwIJqrd9D9gDDL0NWUQa4"/>
+</div>
+</div>
+<div class="mt-8 mb-8 border-2 border-primary p-4 shadow-green-glow">
+<h3 class="text-accent text-2xl font-bold leading-tight tracking-wider pixelated-text mb-4">Relatório de Análise de Engajamento</h3>
+<div class="bg-secondary p-4 border-2 border-accent-blue">
+<img class="w-full" data-alt="A pixelated line chart showing user engagement metrics over time." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxhNjgJ5r1XQO8JDt_qv-mr4ioCSxWE51FoJW4FmL8yzPHDKD0NV84FqEJpPVxYQOh-MqO-Sgy_opjHtcwaHED60DWPfsB0_K1q-qVecenrc7-dGMzVI3YAIuKlZk0XGyJKGQCLIZ1eoCzqus5UIEsnzL9pbrKL10bj98e1QLuEawUdDa7HMVyEsfM8ibZnvZHnxKqO4lVJZLqhw1ZfA9tUrd3XSi22D06Bedv2dPJB9A7Y-dOXag3gXsg3jpuRbn7prbRYPNEMFqc"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
